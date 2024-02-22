@@ -1,0 +1,46 @@
+A nossa saga dos cavaleiros continua . Para isso, vamos continuar  criando uma tabela, onde conseguimos ver as informações. Siga o passo a passo e eleve o cosmo do seu coração. 
+
+
+
+
+1. Conecte a página principal, com a CavaleirosBronze, no <a>Veja mais informações da saga</a>
+
+-------
+
+2. Nessa Saga temos várias fazes, crie uma lista onde a ordem não é importante de todas as fases da saga
+
+-------
+
+3. Na nossa lista de episódios, ordene os episódios de 1 a 8, para que saibamos a ordem de cada um 
+
+------
+
+4. Para definirmos os substativos, precisamos criar uma lista de descrição, que nos fale sobre os cavaleiros. 
+
+------
+
+5. Para definirmos os adjetivos, precisamos criar uma lista de descrição, que nos fale sobre os cavaleiros. 
+
+
+------
+
+6. Crie uma tabela, cujo o cabeçalho seja : Nome | Armadura | Idade 
+
+------
+
+7. Adicione as informações de cada cavaleiro em uma linha 
+
+----
+
+8. Na nossa tabela de cavaleiros de bronze, estilize-a para que cada celula tenha uma borda vermelha
+
+------
+
+9. Crie um quadro embutido antes do footer, com largura de 560 pixel por 315 pixels. Neste quadro , devemos linkar com esse link 
+
+https://www.youtube.com/embed/bvptpnWZBH0
+
+-----
+
+10. Agora que nosso site tá pronto, precisamos falar dos nossos direitos autorais, para oferecer o controle das nossas criações. Coloque no footer o simbolo de copyright e um símbolo de fogo. 
+
