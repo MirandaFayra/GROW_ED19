@@ -7,7 +7,7 @@ A nossa saga dos cavaleiros continua . Para isso, vamos continuar  criando uma t
 
 -------
 
-2. Nessa Saga temos várias fazes, crie uma lista onde a ordem não é importante de todas as fases da saga
+2. Nessa Saga temos várias fases, crie uma lista onde a ordem não é importante de todas as fases da saga
 
 -------
 
