@@ -1,0 +1,23 @@
+body {
+  text-align: center;
+}
+
+/* Quatro valores */
+p.four {
+  border-style: dotted solid double dashed;
+}
+
+/* Três valores */
+p.three {
+  border-style: dotted solid double;
+}
+
+/* Dois valores */
+p.two {
+  border-style: dotted solid;
+}
+
+/* Um valor */
+p.one {
+  border-style: dotted;
+}

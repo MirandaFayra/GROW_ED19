@@ -1,0 +1,17 @@
+div.ex1 {
+  height: 50px;
+  width: 100%;
+  border: 1px solid #4caf50;
+}
+
+div.ex2 {
+  height: 200px;
+  width: 50%;
+  background-color: powderblue;
+}
+
+div.ex3 {
+  height: 100px;
+  width: 500px;
+  background-color: powderblue;
+}
