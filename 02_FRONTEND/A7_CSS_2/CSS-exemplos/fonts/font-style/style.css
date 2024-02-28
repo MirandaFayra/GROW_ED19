@@ -11,7 +11,7 @@ p.oblique {
 }
 
 p.normal-weight {
-  font-weight: normal;
+  font-weight:bold;
 }
 
 p.light {
@@ -31,5 +31,5 @@ p.normal-variant {
 }
 
 p.small {
-  font-variant: small-caps;
+  font-variant:small-caps;
 }

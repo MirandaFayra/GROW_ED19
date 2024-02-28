@@ -1,17 +1,66 @@
 div.ex1 {
-  height: 50px;
-  width: 100%;
-  border: 1px solid #4caf50;
+  height: 30vh;
+  width: 70vw;
+  background-color: yellow;
 }
 
+
+/*
+  VIEWPORT TAMANHO DA TELA 
+
+  100 LARGURA  X 100 ALTURA 
+
+*/ 
+
 div.ex2 {
-  height: 200px;
-  width: 50%;
-  background-color: powderblue;
+  height: 30vh;
+  width: 30vw;
+  background-color:red;
 }
 
 div.ex3 {
-  height: 100px;
-  width: 500px;
-  background-color: powderblue;
+  height: 30vh;
+  width: 99vw;
+  background-color: blue;
 }
+
+
+/*
+TAMANHO DE FONTE 
+
+
+  EM => Parte como referencia o elemento pai 
+  elemento pai  direto 16px 
+
+    - 1em => 16px 
+    - 2em => 32px
+
+  < elemento pai / div>
+    <elemento filho / a> 
+  </ elemento pai div>
+
+  REM => Parte como referencia a raiz do documento 
+
+  body => 16px
+  1rem => 16px
+
+  <body>
+    <a></a>
+  </body>
+
+  body{
+    font-size: 16px
+  }
+
+  a{
+    font-size: 1rem;
+  }
+
+  max-width : largura máxima do elemento 
+
+    - evitar que estique demais 
+
+  min-width : largura  minima que o elemento pode ter
+    - evitar que que esmague e nao fique legivel 
+    
+*/ 

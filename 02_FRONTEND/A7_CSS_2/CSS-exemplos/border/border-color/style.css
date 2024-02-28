@@ -4,8 +4,7 @@ p.one {
 }
 
 p.two {
-  border-style: solid;
-  border-color: green;
+  border: 5px dotted #8309d1;
 }
 
 p.three {
