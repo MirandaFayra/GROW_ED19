@@ -1,0 +1,13 @@
+p.one {
+  border-style: solid;
+  border-color: red;
+}
+
+p.two {
+  border: 5px dotted #8309d1;
+}
+
+p.three {
+  border-style: dotted;
+  border-color: blue;
+}

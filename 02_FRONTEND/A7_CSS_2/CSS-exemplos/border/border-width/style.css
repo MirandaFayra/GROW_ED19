@@ -1,0 +1,29 @@
+p.one {
+  border-style: solid;
+  border-width: 5px 20px; /* 5px superior e inferior, 20px dos lados */
+}
+
+p.two {
+  border-style: solid;
+  border-width: 20px 5px; /* 20px superior e inferior, 5px dos lados */
+}
+
+p.three {
+  border-style: solid;
+  border-width: 25px 10px 4px 35px; /* 25px superior, 10px direita, 4px inferior e 35px esquerda */
+}
+
+p.four {
+  border-style: dotted;
+  border-width: thick;
+}
+
+p.five {
+  border-style: double;
+  border-width: medium;
+}
+
+p.six {
+  border-style: double;
+  border-width: thick;
+}

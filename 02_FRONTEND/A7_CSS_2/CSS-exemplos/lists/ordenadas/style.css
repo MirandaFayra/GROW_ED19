@@ -1,0 +1,15 @@
+ol.a {
+  list-style-type: upper-roman;
+}
+
+ol.b {
+  list-style-type: decimal;
+}
+
+ol.c {
+  list-style-type: upper-latin;
+}
+
+ol.d {
+  list-style-type: lower-greek;
+}
