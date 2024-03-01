@@ -1,0 +1,21 @@
+ul.a {
+  list-style-type: circle;
+}
+
+.b {
+  list-style-type: disc;
+  background-color: lightblue;
+  border: 1px solid red;
+  border-radius: 50px;
+  margin: 10px 20px 100px 150px ;
+}
+
+ul .c {
+  list-style-type: square;
+}
+
+ul.d {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}

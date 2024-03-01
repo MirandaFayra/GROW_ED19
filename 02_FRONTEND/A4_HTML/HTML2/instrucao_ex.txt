@@ -1,0 +1,109 @@
+------------------- AULA 1 ---------------------- 
+
+Título : Os cavaleiros do zodíaco 
+
+Nome: Shiryu 
+
+Idade : 14 anos 
+
+Terra Natal : Japão 
+
+Armadura : Dragão
+
+Golpes : 
+
+Rozan Shoryu Ha
+Faz com que seu sangue corra em sentido contrário, concentrando enorme energia e liberando-a na forma de um poderoso gancho, acompanhado por seu cosmo tomando a forma de um dragão, que leva o oponente pelos ares.
+
+Rozan Koryu Ha
+Shiryu agarra o alvo por trás e, queimando o cosmo ao máximo, lança ambos para os céus. Acredita-se capaz de derrotar qualquer oponente, mas o atrito provocado pela subida provoca a morte de usuário e alvo.
+
+
+Se aprofunde : https://ssu.fandom.com/wiki/Shiryu_de_Drag%C3%A3o
+
+
+------------------- AULA 2 ---------------------- 
+
+INTRO DESTACAR : "Faça elevar o cosmo <br> no seu coração <br>Todo mal combater <br>Despertar o poder"
+
+---
+
+DESTACAR EM NEGRITO : 
+
+    - sangue corra em sentido contrário,
+    - oponente pelos ares
+
+---
+
+DEIXAR MAIS FORTE PARA RESSALTAR NO LEITOR DE TELA:
+
+    - Nomes dos golpes
+
+---
+
+DEIXAR EM ITÁLICO : 
+
+Queimando o cosmo ao máximo
+
+---
+
+DESTACAR DE OUTRA COR 
+
+- seu cosmo tomando a forma de um dragão,
+
+---
+
+EXCLUIR O TEXTO DO DOCUMENTO, PORÉM MOSTRAR NO HISTÓRICO: 
+
+Esses golpes aparecem em todas as temporadas do CDZ. Além disso, ele encherga em todos os episódios
+
+---
+
+INSERIR TEXTO NO LOCAL QUE FOI EXCLUÍDO 
+
+O cavaleiro de Dragão volta enxergar no episódio:  Lágrimas do Dragão Cego é o trigésimo terceiro Episódio do Anime Os Cavaleiros do Zodíaco.
+
+---
+
+ENVIE UM EMAIL PARA O CRIADOR DA SAGA 
+
+Pode mandar um email para mim. Sou o Masami Kurumada (conhecido também como o criador do CDZ)
+
+criadorcdz@email.com
+
+---
+
+CRIE UM BOTÃO COM LINK 
+
+- Crie um botão com link para que redirecione para o vídeo no youtube de abertura 
+
+- https://www.youtube.com/watch?v=l2dQ5J05uss 
+
+
+----
+
+ABRA EM UMA NOVA ABA 
+
+- Abra em uma nova aba a abertura dos CDZ ao clicar no botão 
+
+----
+
+MUDE O TAMANHO DA IMAGEM DO CAVALHEIRO 
+
+- Mude a altura da imagem do Shiryu para 400 px
+
+--- 
+
+NA IMAGEM CRIE UM LINK QUE REDIRECIONA 
+
+- Na imagem, redirecione para o site que fala mais informações sobre o cavaleiro
+
+https://saintseiya.gaming.ph/wiki/Dragon_Shiryu
+
+- faça que o link abra em uma nova página
+
+---
+
+ADICIONE O FAVICON
+
+- Adicione o favicon da pasta assets 

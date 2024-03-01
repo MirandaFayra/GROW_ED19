@@ -1,0 +1,67 @@
+
+- Software Livre : Há 4 tipos de liberdade 
+    - 1. Liberdade de executar o programa como desejar ; 
+
+    - 2. Liberdade de estudar como o programa funciona e adaptá-lo 
+
+    - 3. Liberdade de redistribuir cópias do modo que você possa ajudar o próximo 
+
+    - 4. Liberdade de distribuir cópias da sua versão modificada 
+
+=================
+
+- Input : Recebimento das informações iniciais que serão usadas (informação digital e componente fisico) => Transforma a informações para que ela seja entendida no processo de desenvolvimento . => Misturar os ingredientes 
+
+- Processing : Pegar várias informações, organizá-las  baseando nas regras pré-definidas com ituito de realizar algum objetivo.  => Assar, fazendo com que a mistura aconteça e os ingredientes interajam
+
+- Output: É a saída de dados, o resultado do programa . Há vários tipos de resultado final (textual, fisico, ações fisicas, ações digitais) => bolo pronto 
+
+- Algoritimo, receita de bolo => Passo a passo organizado com o intuito de resolver um problema especifico/tarefa . 
+
+=================
+
+    - Circulo => Inicio e fim do código 
+    - Quadrado tortinho => entrada de dados 
+    - Retangulo com curva =>  Saída de dados 
+    -  Retangulo => Processamento 
+    - Losango => Decisão 
+    - Seta => Conexao do codigo 
+
+=================
+
+    - Hardware : Parte fisica do equipamento eletronico
+
+    - Software : Parte lógica do computador
+
+    - Sistema Operacional: Como o hardware e o softawre se comunicam
+
+=================
+
+- CLIENTE : O que solicita / requere um determinado serviço => Faz requisição
+
+- SERVIDOR : O que fornece resposta para o cliente => Sempre fornece uma resposta (Erro / sucesso)
+
+CLIENTE X SERVIDOR 
+
+- CLIENTE : manda um whats para a pizzaria => pergunta se tem a pizza => pizzaria da a resposta => Pizzaria entrega  a pizza 
+
+- SERVIDOR : pazzaria pega os ingrendientes => faz a pizza => manda para o entregador => ele faz a rota e entrega para o cliente
+
+- CLIENTE (PESSOA QUE TÁ PEDINDO A PIZZA) => SERVIDOR (PIZZARIA) => PESSOA ENTREGADORA (PACOTE) => WAZE QUE CALCULA A ROTA (ROTEADOR ) => PIZZA (DADO SOLICITADO PELA PESSOA CLIENTE)
+
+-------------- REDES -------------
+
+HTTP X HTTP X SSL 
+
+
+    - HTTP : Hypertext Transfer Protocol => Protocolo (conjunto de regras) de transferencia  que habilita a comunicação entre vários sistemas 
+
+    - HTTPS : Hypertext Transfer Protocol Secure => Protocolo (conjunto de regras) de transferencia  que habilita a comunicação entre vários sistemas porém com uma camada a mais de segurança . 
+
+        - Utiliza chaves criptografadas para validar os dados 
+
+        - Dados não visisveis para hackers ou ususários externos 
+
+        - Impulsiona o raqueamento do site na pesquisa do google 
+
+    - SSL => Secure Sockets Layer => Confirma a identidade do site e possibilita uma conexão criptografada => Cria um link cripitografado entre o servidor e o navegadoe web (CADEADO AO LADO DA URL )

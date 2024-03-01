@@ -1,0 +1,54 @@
+/* Flex = Torna o elemento um flex container automaticamente transformando todos os seus filhos diretos em flex itens. */
+
+.flex {
+	display: flex;
+}
+
+/*FLEX-WRAP : WRAP => Faz com que todos os elementos caibam dentro do elemento pai */
+
+/*
+.flex-wrap {
+	flex-wrap: wrap;
+}
+*/
+
+/*FLEX-WRAP : NO-WRAP => Faz com que todos os elementos caibam dentro do elemento pai */
+
+/*
+.flex-wrap {
+	flex-wrap: nowrap;
+}
+*/
+
+/*FLEX-WRAP : NO-WRAP => Faz com que todos os elementos caibam dentro do elemento pai */
+
+.flex-wrap {
+	flex-wrap: wrap-reverse;
+}
+
+
+/* Flex Item */
+.item {
+	margin: 5px;
+	background: lightcoral;
+	text-align: center;
+	font-size: 1.5em;
+}
+
+.container {
+	max-width: 400px;
+	margin: 0 auto;
+	border: 1px solid #ccc;
+}
+
+h1 {
+	text-align: center;
+	margin: 20px 0 0 0;
+	font-size: 1.25em;
+	font-weight: normal;
+}
+
+body {
+	font-family: monospace;
+	color: #333;
+}

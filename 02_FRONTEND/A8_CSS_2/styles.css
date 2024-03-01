@@ -1,0 +1,54 @@
+*{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#primeira-div  p {
+    color: yellow;
+}
+
+/*
+    elementopai  filhoDireto{
+    color: yellow;
+}
+*/
+
+
+#primeira-div { /* PAI*/
+    background-color: lightseagreen;
+    border: solid green;
+    position: relative; /* ELEMESMO*/
+    top: 100px;
+}
+
+
+#segunda-div{  /* FILHO*/
+    background-color: lightcoral;
+    height: 10vh;
+    width: 20vw;
+    text-align:center;
+    vertical-align: top;
+    position:absolute;
+    top: 200px;
+}
+
+#terceira-div{ 
+    background-color: lightgreen;
+    height: 10vh;
+    text-align:center;
+    vertical-align: top;
+    position: fixed;
+    top:200px;
+    left: 300px;
+}
+
+#quarta-div{ 
+    background-color: lightblue;
+    height: 10vh;
+    text-align:center;
+    vertical-align: top;
+}
+
+
+
+

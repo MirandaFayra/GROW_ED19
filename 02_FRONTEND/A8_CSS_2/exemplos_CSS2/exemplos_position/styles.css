@@ -1,0 +1,51 @@
+.box-orange {          
+    background: orange;
+    height: 100px;
+    width: 100px;       
+}
+  
+.box-blue {
+    background: lightskyblue;
+    height: 100px;
+    width: 100px;   
+    position:fixed;
+    top: 200px;
+    left: 200px;
+}
+
+.box-red {
+    background: red;
+    width: 99vw;
+    height: 100px;
+    position: sticky;
+    top: 100px;
+}  
+  
+/* EXEMPLO COM ABSOLUTE - se comportam como se o elemento tivesse sido completamente removido da página da web*/ 
+
+.pai{
+    background-color:purple;
+    height: 200vh;
+}
+
+.box-orange {
+    position: fixed;
+    background: orange;
+    width: 100px;
+    height: 100px;
+    top: 300px;
+}
+
+
+/* EXEMPLO COM ABSOLUTE - se comportam como se o elemento tivesse sido completamente removido da página da web - APARECER O AZUL */
+
+/*
+.box-orange {
+    position: absolute;
+    background: orange;
+    width: 100px;
+    height: 100px;
+    left: 30px;
+    top: 50px;
+}
+*/

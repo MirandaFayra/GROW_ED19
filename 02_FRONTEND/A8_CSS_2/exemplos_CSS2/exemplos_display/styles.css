@@ -1,0 +1,14 @@
+div{
+    border: 9px solid purple;
+}
+
+p{
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-left: 10px;
+}
+
+img{
+    max-width: 300px;
+}
+

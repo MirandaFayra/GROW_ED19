@@ -1,0 +1,60 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-size: 2rem;
+  }
+
+/*LARGURA MÁXIMA - max-width (testar com diferentes tamanhos) */
+
+div {
+    max-width: 600px;
+    background-color: lightgoldenrodyellow;
+}
+
+span {
+    background-color: lightseagreen;
+}
+
+/* DISPLAY BLOCK - COMENTAR O SPAN E TESTAR */
+/* DISPLAY BLOCK - elemento começa em uma nova linha e ocupa a linha inteira */
+
+/*
+span {
+    display: block;
+    background-color: lightcoral;
+}
+*/ 
+
+/* DISPLAY INLINE-BLOCK - COMENTAR O SPAN E TESTAR */
+/* DISPLAY INLINE-BLOCK - poder aplicar largura e altura a ele, o que não é possível quando o elemento é atribuído a uma exibição de inline. */
+
+/*
+span {
+    display: inline-block;
+    background-color: lightsalmon;
+    width: 140px;
+    height: 140px;
+} 
+*/
+
+/* DISPLAY NONE - COMENTAR O SPAN E TESTAR */
+/* DISPLAY NONE - o elemento é completamente retirado da página e não afeta o layout. */
+
+
+/*
+span {
+    display: none;
+    background-color: lightskyblue;
+    width: 140px;
+    height: 140px;
+}
+*/ 
+
+span {
+    visibility: hidden;
+    background-color: #006100;
+    width: 140px;
+    height: 140px;
+}

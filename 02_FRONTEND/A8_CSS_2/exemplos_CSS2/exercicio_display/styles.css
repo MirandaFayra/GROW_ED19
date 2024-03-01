@@ -1,0 +1,25 @@
+.centralizando-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20vh;
+}
+
+.primeira-div{
+    background-color: lightcoral;
+    height: 20vh;
+    width: 10vw;
+}
+
+.segunda-div{
+    background-color: lightgreen;
+    height: 20vh;
+    width: 10vw;
+}
+
+.terceira-div{
+    background-color: lightseagreen;
+    height: 20vh;
+    width: 10vw;
+}

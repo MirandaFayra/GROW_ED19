@@ -1,0 +1,23 @@
+.centralizando-div {
+    float: left;
+    margin-left: 45%;
+    margin-top: 10%;
+}
+
+.primeira-div{
+    background-color: lightcoral;
+    height: 20vh;
+    width: 10vw;
+}
+
+.segunda-div{
+    background-color: lightgreen;
+    height: 20vh;
+    width: 10vw;
+}
+
+.terceira-div{
+    background-color: lightseagreen;
+    height: 20vh;
+    width: 10vw;
+}
