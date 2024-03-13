@@ -100,7 +100,7 @@ let divisao3 = numero3/0
 
 
 //x =- y  // =>  x = x - y
-//x *= y  // =>  x = x * 
+//x *= y  // =>  x = x * y 
 //x /= y  // =>  x = x / y
 //x %= y  // =>  x = x % y
 //x += 1  // =>  x = x + 1
@@ -166,6 +166,9 @@ if(!pilulaAzulMatrix){
     console.log('VOCÊ CONTINUA SONHANDO')
 }
 */
+
+
+
 
 
 
