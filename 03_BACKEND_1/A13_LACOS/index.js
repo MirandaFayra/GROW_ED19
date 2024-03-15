@@ -66,6 +66,7 @@ console.log(`Essa é a varivél B : ${variavelB}`)
 */
 
 /*
+
 let contador = 4
 
 do {
