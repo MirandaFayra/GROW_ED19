@@ -6,6 +6,15 @@ index (onde o o elemento está => posição)
 
 Array é : é uma estrutura de dados que armazena uma coleção de elementos de tal forma que cada um dos elementos possa ser identificado por, pelo menos, um índice ou uma chave. 
 
+
+
+let arrayNumeros =[1, 3,5,68,08]
+
+let arrayMisto = [1, 'fay', true]
+
+let nomeDoArray = [o que vc quer armazenar , item 2, item 3 ...]
+
+
 Inicia a posição 0 
 
 
@@ -16,6 +25,85 @@ Marcele está na posição 1
 Emanoel está na posição 2
 Anderson está na posição 3
 Marcelo está na posição 4
+
+let novoArray = [1, 3, 'bananinha', true]
+
+item 1 = posicao 0  => indice 0
+item 3 = posicao 1 => indice 1
+item baninha = posicao 2  => indice 2
+item true = posicao 3 => inidce 3
+
+posição = onde o eleemento se encontra => índice 
+
+nomeArray[indice_do_elemento_desejado]
+
+novoArray[2] => bananinha
+novoArray[3] => true
+novoArray[1] => 3 
+novoArray[0] => 1
+
+*/
+
+//console.log('Olá mundo!')
+
+
+//console.log('Elemento na posicao 0',novoArray[0])
+//console.log('Elemento na posicao 1',novoArray[1])
+//console.log('Elemento na posicao 2',novoArray[2])
+//console.log('Elemento na posicao 3',novoArray[3]) 
+//console.log('Elemento na posicao 4',novoArray[4])
+//console.log('Elemento na posicao 5',novoArray[5])
+
+/*
+    tamanho do array é a quantidade de elementos que há dentro dele 
+
+    array vazio = tamanho dele é zero 
+
+    quantidade elementos/ tamanho => length
+
+    nomeDoArray.length
+
+*/ 
+
+let novoArray = [1, 3, 'bananinha',true, false, 'fayra'] 
+
+//console.log('Essa é a quantidade de elementos', novoArray.length)
+
+/* 
+    Virgula dividir os elementos 
+
+    Qtd != posicao 
+
+    Qtd elementos => length 
+
+    Posição => indice
+
+    nomeArray.length  -1 => posição do último do último elemento 
+*/
+
+//         (nomeDoArray[indice])
+// (selecione na minha lista  chamada nomeDoArray  [o elemento que o indice/posicao é essa])
+//console.log(nomeDoArray [nomeDoArray.length -1])
+
+// array.length => quantidade total de elementos =>  tira 1 pq o array inicia do zero 
+
+//         (nomeDoArray[indice])
+//console.log(novoArray[novoArray.length -1])
+
+//console.log(novoArray[2])
+
+//let arrayAlunos19 = ['Pedro', 'Alan ', 'Joana', 'Marcio', 'Cadu']
+
+/*
+     5 pessoas 
+     Indice da ultima pessoa é 4 
+     Indice da primeira pessoa é 0 
+
+     Pedro => 0 
+     Cadu => 4 
+
+     arrayAlunos19.length => quantidade de elementos 
+    [ arrayAlunos19.length -1 ] => posicao do ultimo 
 
 */
 
@@ -38,6 +126,38 @@ Marcelo está na posição 4
     COLOCAR => array.push('colocar') | array.unshift('colocar')
 */
 
+
+let arrayAlunos19 = ['Pedro', 'Alan ', 'Joana', 'Marcio', 'Cadu']
+
+//arrayAlunos19.push('Math')
+//arrayAlunos19.push('Djonathan')
+//arrayAlunos19.push('Isa')
+
+//console.log('Esse é o meu array atualizado',arrayAlunos19)
+
+//console.log('Esse é o tamanho do meu array atualizado',arrayAlunos19.length)
+
+//arrayAlunos19.pop()
+
+//console.log(arrayAlunos19)
+
+arrayAlunos19.unshift('Math')
+arrayAlunos19.pop()
+arrayAlunos19.unshift('Cadu')
+//console.log(arrayAlunos19)
+arrayAlunos19.shift()
+//console.log(arrayAlunos19)
+
+/* 
+    ADICIONAR =>
+        push - adicionar no final
+        unshift - adicionar no inicio
+        
+    RETIRAR => 
+        pop  - retirar do final
+        shift - retirar do inicio
+
+*/
 
 
 //----VERIFICANDO A QUANTIDADE DE ELEMENTOS  -------------
