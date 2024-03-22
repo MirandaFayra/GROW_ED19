@@ -280,6 +280,40 @@ for (let item of arrayDiverso) {
 */
 
 
+let resolucaoAnoNovo = ['Perder gordura e ganhar massa magra', 'traduzir o meu linkedin para ingles', 'Ganhar e investir mais dinheiro']
+
+//a-) 
+
+console.log(resolucaoAnoNovo[0])
+
+
+//b-)
+
+console.log(resolucaoAnoNovo[2])
+
+
+//c-)
+
+console.log(resolucaoAnoNovo[resolucaoAnoNovo.length -1])
+
+
+//d-) 
+
+for (let i = 0; i < resolucaoAnoNovo.length; i++) {
+    console.log(` Você consiguirá: ${resolucaoAnoNovo[i]}`);
+}
+
+
+//--- OU -------
+
+
+for (const resolucao of resolucaoAnoNovo) {
+    console.log(resolucao);
+}
+
+
+
+
 //------------- EX 2 ----------------- 
 
 /* 
