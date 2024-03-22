@@ -152,7 +152,7 @@ arrayAlunos19.shift()
     ADICIONAR =>
         push - adicionar no final
         unshift - adicionar no inicio
-        
+
     RETIRAR => 
         pop  - retirar do final
         shift - retirar do inicio
@@ -195,6 +195,75 @@ Para saber o indice do último elemento de um array :  array.length - 1  (tiramo
     }
 
 */
+
+
+
+/*
+
+for (exp inicial ;condicao ; expressao final){}
+
+    contador (i = indice) =>  variável que auxiliar percorrer a lista 
+
+    let i = 0 => Iniciar percorer a lista a partir do primeiro elemento. O primeiro elemento de um array está na posicao 0
+
+    i < meuArray.length = enquanto o indice for menor que o indice final vc realiza essa acao 
+
+    i++ => adicionar um na posicao 
+*/ 
+
+//let meuArray = [13, 25, 30, 54, 85]
+
+
+
+/*
+for (let i = 0; i < meuArray.length; i++) {
+    let numerosDobrados = meuArray[i]*2
+    console.log('Esse é um elemento do  array : ',numerosDobrados)
+}
+*/
+
+/*
+for (let i = 0; i < meuArray.length; i++) {
+    let numerosDobrados = meuArray[i]+ 10
+    console.log('Esse é um elemento do  array : ',numerosDobrados)
+}
+*/
+
+/*
+for (let i = 0; i < meuArray.length; i++) {
+    let numerosDobrados = meuArray[i]- 5
+    console.log('Esse é um elemento do  array : ',numerosDobrados)
+}
+*/ 
+
+/*
+
+for (let i = 0; i < meuArray.length; i++) {
+    let numerosDobrados = meuArray[i]**2
+    console.log('Esse é um elemento do  array : ',numerosDobrados)
+}
+
+*/ 
+
+/*
+
+for (let i = 0; i < meuArray.length; i++) {
+    let numerosDobrados = meuArray[i]* meuArray[i]
+    console.log('Esse é um elemento do  array : ',numerosDobrados)
+}
+*/ 
+
+/*
+
+let arrayDiverso = [13, 25, 30, 54, 85, 'teste']
+
+for (let item of arrayDiverso) {
+    console.log('Esse é um item do array :',item)
+}
+*/
+
+
+
 
 
 //------------- EX 1 ----------------- 
