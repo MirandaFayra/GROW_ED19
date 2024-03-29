@@ -211,3 +211,53 @@ for(let i = 0  ; i < listaDeMarcelos.length; i++){
 
 */
 
+
+let obj1  ={
+    Nome : 'fayra',
+    PrecoObjeto : 200,
+    PrecoDesconto: 100
+}
+
+let obj2  ={
+    Nome : 'fayra2',
+    PrecoObjeto : 200,
+    PrecoDesconto: 100
+}
+
+
+let listaProdutos 
+listaProdutos.push(obj1, obj2)
+
+
+//Crio uma cópia a partir do outro elemento 
+let obj3 = {...obj2 }
+
+//Reatribuir novos valores
+obj3.Nome ='objeto 3'
+obj3.PrecoObjeto= 150 
+obj3.PrecoDesconto = 50
+
+listaProdutos.push(obj3)
+
+
+/* 
+let obj1  ={
+    Nome : 'fayra',
+    PrecoObjeto : 200,
+    PrecoDesconto: 100
+}
+
+//Copia objeto 1, como base do 2
+let obj2 = {...obj1}
+
+// Adicionei nessa copia a propriedade fabricante
+obj2.fabricante = 'fay'
+
+let obj2  ={
+    Nome : 'fayra',
+    PrecoObjeto : 200,
+    PrecoDesconto: 100,
+    fabricante = 'fay'
+}
+
+*/
