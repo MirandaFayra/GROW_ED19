@@ -138,4 +138,6 @@ Se o valor do produto for par, devemos encaminhar o produto para a lista de prom
 
 
 
-console.log('alteracao')
+
+
+
