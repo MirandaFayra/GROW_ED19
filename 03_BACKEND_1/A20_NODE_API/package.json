@@ -1,0 +1,18 @@
+{
+  "name": "A20_NODE_API",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scriptSoma": "nodemon ./src/somaNumeros.js",
+    "scriptSubtracao": "node subtracaoNumeros.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "sucrase": "^3.35.0"
+  }
+}
