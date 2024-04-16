@@ -116,7 +116,7 @@ let filtrarHamburguerVegetariano = burguer.filter((burg)=> burg == 'x-mato')
 
 //---------------- FIND ---------------
 
-let listaNumerosPares = [2,4,6,8,8,10,12]
+let listaNumerosPares = [2,4,6,8,8,8,8,8,10,12]
 
 let EncontrarOito = listaNumerosPares.find((numero)=> numero===8)
 
@@ -130,5 +130,42 @@ let acharPosiciaoDoDez = listaNumerosPares.findIndex((numero)=> numero=== 10)
 
 //----------------- SOME ----------------- 
 
-listaNumerosPares.some((x)=>)
+let verificarSeExisteOito = listaNumerosPares.some((numero)=> numero === 8)
+console.log(verificarSeExisteOito)
+
+//----------------- SPLICE ----------------- 
+/* 
+     Manipular 
+
+     Inseriri em uma psicao especifica 
+                    OU
+     Retirar de um posicao especifica / elemento
+
+*/
+
+let meses = ['Janeiro', 'Março', 'Abril', 'Maio']
+
+meses.splice(1, 0, 'Fevereiro')
+
+console.log(meses)
+//let posiciaoProduto = produtos.findex((produto)=>produto ==='bananinha')
+//let deletarProduto = produtos.splice(posiciaoProduto,1)
+
+let listaPessoasEstudantes = ['Renan', 'Lucas', 'Sheila','Isa','Alan']
+listaPessoasEstudantes.splice(0,5,'bananinha','lummpalumpa', 'sherlock') // splice(de onde eu vou aplicar transformacao, qtd elementos que serao removidos, o que eu vou adiconar )
+
+console.log(listaPessoasEstudantes)
+
+let arrayBolinhas = ['azul', 'verde','vermelho', 'preto', 'amarela']
+
+// azul, verde, vermelho
+
+console.log('Primeiro',arrayBolinhas.slice(0,3))
+console.log('Segundo',arrayBolinhas.slice(1,3))
+console.log('terceiro',arrayBolinhas.slice(1,2))
+console.log('quarto',arrayBolinhas.slice(0,2))
+
+
+
+//----------------------- SORT --------------------
 
