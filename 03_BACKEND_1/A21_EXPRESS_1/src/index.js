@@ -22,6 +22,9 @@ nome,preco, qtdPromocao
 let viagens =[]
 let proximaViagem = 1
 
+
+//-------- POST - CREATE ------------- 
+
 // http://localhost:3333/viagens
 app.post('/viagens',(request,response)=>{
     const nomeViagem = request.body.nomeViagem
@@ -56,10 +59,23 @@ app.post('/viagens',(request,response)=>{
     Quantidade em Promoção : ${qtdPromocao} viagens
     `)
 
-
 })
 
 
+//-------- GET - READ -------------
+
+// http://localhost:3333/viagens
+app.get('/viagens',(request,response)=>{
+
+    if(viagens.length === 0){
+        response.status(400).send('Não existe nenhuma viagem cadastrada. Crie uma nova viagem')
+    }
+
+    const dadosMapeados = viagens.map((viagem)=> `As viagens são : ${viagem.nomeViagem} | Preço R$ ${viagem.precoDaViagem} | Quantidade em Promoção : ${viagem.qtdPromocao}`)
+
+    response.status(200).send(dadosMapeados)
+
+})
 
 
 
