@@ -44,6 +44,7 @@ app.post('/viagens',(request,response)=>{
     }
 
     let novaViagem ={
+        id:proximaViagem,
         nomeViagem :nomeViagem,
         precoDaViagem :precoDaViagem,
         qtdPromocao:qtdPromocao
@@ -77,7 +78,63 @@ app.get('/viagens',(request,response)=>{
 
 })
 
+//-------- UPDATE - ATUALIZAR -------------
 
+// http://localhost:3333/viagens/:idBuscado
+app.put("/viagens/:idBuscado", (request, response) => {
+    const nomeDaViagem = request.body.nomeDaViagem
+    const precoDaViagem = request.body.precoDaViagem
+    const qtdPromocao = request.body.qtdPromocao
+  
+    const idBuscado = Number(request.params.idBuscado)
+  
+    if (!idBuscado) {
+      response
+        .status(400)
+        .send(JSON.stringify({ Mensagem: "Favor enviar um ID válido" }))
+    }
+  
+    const idVerificado = viagens.findIndex((viagem) => viagem.id === idBuscado)
+  
+    if (idVerificado === -1) {
+      response
+        .status(400)
+        .send(JSON.stringify({ Mensagem: "Id de viagem não encontrado" }))
+    }
+  
+    if (!nomeDaViagem) {
+      response
+        .status(400)
+        .send(JSON.stringify({ Mensagem: "Passe o nome da viagem certo" }))
+    }
+  
+    if (!precoDaViagem) {
+      response
+        .status(400)
+        .send(JSON.stringify({ Mensagem: "Passe um preço válido" }))
+    }
+  
+    if (!qtdPromocao) {
+      response
+        .status(400)
+        .send(JSON.stringify({ Mensagem: "Passe a quantidade certa" }))
+    }
+  
+    if (idVerificado !== -1) {
+      const viagem = viagens[idVerificado]
+      viagem.nomeDaViagem = nomeDaViagem
+      viagem.precoDaViagem = precoDaViagem
+      viagem.qtdPromocao = qtdPromocao
+  
+      response.status(200).send(
+        JSON.stringify({
+          Mensagem: `Viagem ${viagem.nomeDaViagem} atualizada com sucesso`,
+          data: viagem,
+        })
+      )
+    }
+  })
+  
 
 //---------------- VERIFICAR PORTA ---------
 app.listen(3333,()=> console.log('Servidor rodando na porta 3333'))
