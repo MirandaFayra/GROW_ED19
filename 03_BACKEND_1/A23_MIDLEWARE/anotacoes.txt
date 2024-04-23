@@ -1,0 +1,66 @@
+- Parametros (da onde a gente pega os dados na requisicao)
+
+    - Criar uma pessoa usuaria : 
+
+        - email 
+        - senha 
+        - nome 
+
+-----
+
+Capturar informacos : 
+
+    - Body -> Corpo da requisicao => req.body.nomeParametro
+    - Params -> Caminho path Params => req.params.nomeParametro
+    - Query -> Query Params
+    - Headers -> Headers
+
+
+
+
+
+//---------- CONFIG BASICAS ------
+import express from 'express'
+import cors from 'cors'
+
+const app = express()
+
+app.use(cors())
+
+app.use(express.json())
+
+/* 
+
+app.METODO('endereco',(request, respose)=>{
+
+})
+
+resposta => status code | mensagem 
+
+---
+
+POST -> CRIAR 
+
+----
+
+app.post('/produto',(request, response)=>{
+    // Pega o parametro 
+    const name = request.body.name
+    const price = request.body.price
+
+
+    //Validacao 
+
+    //Resposta 
+
+    response.status(200).send({Requisicao enviada !})
+
+})
+
+*/
+
+
+
+
+//---------------- VERIFICAR PORTA ---------
+app.listen(3333,()=> console.log('Servidor rodando na porta 3333'))
