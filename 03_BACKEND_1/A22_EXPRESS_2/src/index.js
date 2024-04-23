@@ -30,11 +30,11 @@ let proximaAdmin = 1
 
 // http://localhost:3333/viagens
 app.post('/viagens',(request,response)=>{
-    const nomeViagem = request.body.nomeViagem
+    const nomeDaViagem = request.body.nomeDaViagem
     const precoDaViagem = Number(request.body.precoDaViagem)
     const qtdPromocao = Number(request.body.qtdPromocao)
 
-    if(!nomeViagem){
+    if(!nomeDaViagem){
         response.status(400).send('Passe um nome de viagem válido')
     }
 
@@ -48,7 +48,7 @@ app.post('/viagens',(request,response)=>{
 
     let novaViagem ={
         id:proximaViagem,
-        nomeViagem :nomeViagem,
+        nomeDaViagem :nomeDaViagem,
         precoDaViagem :precoDaViagem,
         qtdPromocao:qtdPromocao
     }
@@ -58,7 +58,7 @@ app.post('/viagens',(request,response)=>{
     proximaViagem++
 
     response.status(201).send(`
-    Viagem ${nomeViagem} criada com sucesso! 
+    Viagem ${nomeDaViagem} criada com sucesso! 
     Preço R$ ${precoDaViagem}
     Quantidade em Promoção : ${qtdPromocao} viagens
     `)
@@ -74,7 +74,7 @@ app.get('/viagens',(request,response)=>{
         response.status(400).send('Não existe nenhuma viagem cadastrada. Crie uma nova viagem')
     }
 
-    const dadosMapeados = viagens.map((viagem)=> `As viagens são : ${viagem.nomeViagem} | Preço R$ ${viagem.precoDaViagem} | Quantidade em Promoção : ${viagem.qtdPromocao} | Id: ${viagem.id}`)
+    const dadosMapeados = viagens.map((viagem)=> `As viagens são : ${viagem.nomeDaViagem} | Preço R$ ${viagem.precoDaViagem} | Quantidade em Promoção : ${viagem.qtdPromocao} | Id: ${viagem.id}`)
 
     response.status(200).send(dadosMapeados)
 
@@ -174,7 +174,7 @@ app.post('/signup',async (request,response)=>{
   const data = request.body
 
   const email = data.email
-  const senhaDigitada = data.senhaDigitada
+  const senha = data.senha
 
   if(!email){
     response
@@ -182,7 +182,7 @@ app.post('/signup',async (request,response)=>{
     .send(JSON.stringify({ Mensagem: "Favor inserir um email válido" }))
   }
 
-  if(!senhaDigitada){
+  if(!senha){
     response
     .status(400)
     .send(JSON.stringify({ Mensagem: "Favor inserir uma senha válida" }))
@@ -197,15 +197,15 @@ app.post('/signup',async (request,response)=>{
   }
 
   // Criptografa a senha que será digitada
-  const senhaCriptografada = await bcrypt.hash(senhaDigitada,10)
+  const senhaCriptografada = await bcrypt.hash(senha,10)
 
-  //console.log('Senha digitada',senhaDigitada)
+  //console.log('Senha digitada',senha)
   //console.log('Senha criptografada',senhaCriptografada)
 
   let novaPessoaAdministradora ={
     id : proximaAdmin,
     email : data.email, 
-    senhaDigitada :senhaCriptografada
+    senha :senhaCriptografada
   }
 
   admins.push(novaPessoaAdministradora)
@@ -243,7 +243,7 @@ app.post('/login',async(request,response)=>{
   const admin = admins.find(admin =>admin.email === email)
 
   //Login, precisa comparar a senha digitada com a criptografada. USA O COMPARE
-  const senhaMatch = await bcrypt.compare(senha, admin.senhaDigitada)
+  const senhaMatch = await bcrypt.compare(senha, admin.senha)
 
   if(!senhaMatch){
     response
