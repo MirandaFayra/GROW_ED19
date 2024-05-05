@@ -121,9 +121,11 @@ app.put("/viagens/:idBuscado", (request, response) => {
         .status(400)
         .send(JSON.stringify({ Mensagem: "Passe a quantidade certa" }))
     }
-  
+
+
     if (idVerificado !== -1) {
       const viagem = viagens[idVerificado]
+
       viagem.nomeDaViagem = nomeDaViagem
       viagem.precoDaViagem = precoDaViagem
       viagem.qtdPromocao = qtdPromocao

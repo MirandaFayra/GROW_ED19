@@ -2,8 +2,9 @@
 import express from 'express'
 import cors from 'cors'
 import bcrypt from 'bcrypt'
-import validarViagem from './middleware/validarViagem'
-import validarUsuario from './middleware/validarUsuario'
+import validarViagem from './middleware/validarViagem.js'
+import ValidarUsuario from './middleware/validarUsuario.js'
+
 
 const app = express()
 
@@ -13,7 +14,17 @@ app.use(express.json())
 
 /* 
 
-app.METODO('endereco',(req, respose)=>{
+app.METODO('endereco',(request, response)=>{
+
+})
+
+app.METODO('endereco',(req, res)=>{
+
+Desestruturacao => Pegando o dado do mesmo lugar 
+
+const data = req.body
+
+const {par1,par2,par3} = req.body => const par1 = req.body.par1 | const par2 = req.body.par2 | const par3 = req.body.par3
 
 })
 
@@ -31,38 +42,26 @@ let proximaAdmin = 1
 //-------- POST - CREATE ------------- 
 
 // http://localhost:3333/viagens
-app.post('/viagens',(req,res)=>{
-  const nomeViagem = req.body.nomeViagem
-  const precoViagem = Number(req.body.precoViagem)
-  const qtdPromocao = Number(req.body.qtdPromocao)
+app.post('/viagens',validarViagem ,(req,res)=>{
 
-  if(!nomeViagem){
-      res.status(400).send('Passe um nome de viagem válido')
-  }
-
-  if(!precoViagem){
-      res.status(400).send('Passe um preco da viagem válido')
-  }
-
-  if(!qtdPromocao){
-      res.status(400).send('Passe uma quantidade da promocao válida')
-  }
+  const data = req.body
 
   let novaViagem ={
       id:proximaViagem,
-      nomeViagem :nomeViagem,
-      precoViagem :precoViagem,
-      qtdPromocao:qtdPromocao
+      nomeViagem :data.nomeViagem,
+      precoViagem :data.precoViagem,
+      qtdPromocao:data.qtdPromocao
   }
+
 
   viagens.push(novaViagem)
 
   proximaViagem++
 
   res.status(201).send(`
-  Viagem ${nomeViagem} criada com sucesso! 
-  Preço R$ ${precoViagem}
-  Quantidade em Promoção : ${qtdPromocao} viagens
+  Viagem ${novaViagem.nomeViagem} criada com sucesso! 
+  Preço R$ ${novaViagem.precoViagem}
+  Quantidade em Promoção : ${novaViagem.qtdPromocao} viagens
   `)
 
 })
@@ -85,11 +84,10 @@ app.get('/viagens',(req,res)=>{
 //-------- UPDATE - ATUALIZAR -------------
 
 // http://localhost:3333/viagens/:idBuscado
-app.put("/viagens/:idBuscado", (req, res) => {
-  const nomeViagem = req.body.nomeViagem
-  const precoViagem = req.body.precoViagem
-  const qtdPromocao = req.body.qtdPromocao
+app.put("/viagens/:idBuscado", validarViagem,(req, res) => {
 
+  const data = req.body
+  
   const idBuscado = Number(req.params.idBuscado)
 
   if (!idBuscado) {
@@ -106,29 +104,11 @@ app.put("/viagens/:idBuscado", (req, res) => {
       .send(JSON.stringify({ Mensagem: "Id de viagem não encontrado" }))
   }
 
-  if (!nomeViagem) {
-    res
-      .status(400)
-      .send(JSON.stringify({ Mensagem: "Passe o nome da viagem certo" }))
-  }
-
-  if (!precoViagem) {
-    res
-      .status(400)
-      .send(JSON.stringify({ Mensagem: "Passe um preço válido" }))
-  }
-
-  if (!qtdPromocao) {
-    res
-      .status(400)
-      .send(JSON.stringify({ Mensagem: "Passe a quantidade certa" }))
-  }
-
   if (idVerificado !== -1) {
     const viagem = viagens[idVerificado]
-    viagem.nomeViagem = nomeViagem
-    viagem.precoViagem = precoViagem
-    viagem.qtdPromocao = qtdPromocao
+    viagem.nomeViagem = data.nomeViagem
+    viagem.precoViagem = data.precoViagem
+    viagem.qtdPromocao = data.qtdPromocao
 
     res.status(200).send(
       JSON.stringify({
@@ -171,26 +151,11 @@ app.delete('/viagens/:idBuscado',(req,res)=>{
 //-------- SIGNUP - CRIAR PESSOA ADM -------------
 
 // http://localhost:3333/signup
-app.post('/signup', async(req,res)=>{
+app.post('/signup', ValidarUsuario, async(req,res)=>{
 
   const data = req.body
 
-  const email = data.email
-  const senha = data.senha
-
-  if(!email){
-    res
-    .status(400)
-    .send(JSON.stringify({ Mensagem: "Favor inserir um email válido" }))
-  }
-
-  if(!senha){
-    res
-    .status(400)
-    .send(JSON.stringify({ Mensagem: "Favor inserir uma senha válida" }))
-  }
-
-  const verificarEmail = admins.find((admin)=> admin.email === email)
+  const verificarEmail = admins.find((admin)=> admin.email === data.email)
 
   if(verificarEmail){
     res
@@ -199,7 +164,7 @@ app.post('/signup', async(req,res)=>{
   }
 
   // Criptografa a senha que será digitada
-  const senhaCriptografada = await bcrypt.hash(senha,10)
+  const senhaCriptografada = await bcrypt.hash(data.senha,10)
 
   //console.log('Senha digitada',senha)
   //console.log('Senha criptografada',senhaCriptografada)
@@ -216,36 +181,20 @@ app.post('/signup', async(req,res)=>{
 
   res
     .status(201)
-    .send(JSON.stringify({ Mensagem: `Pessoa administradora de email ${email}, cadastrada com sucesso!` }))
+    .send(JSON.stringify({ Mensagem: `Pessoa administradora de email ${novaPessoaAdministradora.email}, cadastrada com sucesso!` }))
   
 })
 
 
 //-------- LOGIN - FAZER O LOGIN -------------
 
-app.post('/login',async(req,res)=>{
+app.post('/login',ValidarUsuario,async(req,res)=>{
   const data = req.body 
 
-  const email = data.email 
-  const senha = data.senha
-
-  if(!email){
-    res
-    .status(400)
-    .send(JSON.stringify({ Mensagem: "Favor inserir um email válido" }))
-  }
-
-  if(!senha){
-    res
-    .status(400)
-    .send(JSON.stringify({ Mensagem: "Favor inserir uma senha válida" }))
-  }
-
-
-  const admin = admins.find(admin =>admin.email === email)
+  const admin = admins.find(admin =>admin.email === data.email)
 
   //Login, precisa comparar a senha digitada com a criptografada. USA O COMPARE
-  const senhaMatch = await bcrypt.compare(senha, admin.senha)
+  const senhaMatch = await bcrypt.compare(data.senha, admin.senha)
 
   if(!senhaMatch){
     res
@@ -254,7 +203,7 @@ app.post('/login',async(req,res)=>{
   }
 
 
-  res.status(200).send(JSON.stringify({ Mensagem: `Pessoa com email ${email}, foi logada com sucesso! Seja Bem-vinde!` }))
+  res.status(200).send(JSON.stringify({ Mensagem: `Pessoa com email ${data.email}, foi logada com sucesso! Seja Bem-vinde!` }))
 
 })
  
